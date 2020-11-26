@@ -18,6 +18,7 @@ function formvalidation() {
     var Address = document.getElementsByName("uiaddress")[0].value;
     var nationalcode = document.getElementsByName("uicode")[0].value;
     var password = document.getElementsByName("uipass")[0].value;
+    var passagain = document.getElementsByName("uiagain")[0].value;
     var birthdate = document.getElementsByName("uidate")[0].value;
     
 
@@ -60,7 +61,10 @@ function formvalidation() {
     if(password!="" && !password.match(pass) && password.match(persion)){
         errorMessage+= "رمز عبور نامعتبر <br/>";
     }
-        
+    
+   if(passagain!="" && passagain!=password){
+        errorMessage+= "عدم تایید رمز عبور <br/>";
+    }
     
     if(birthdate!="" && birthdate.match(birth)){
         errorMessage+= "الفبای انگلیسی تاریخ تولد  و در بازه۱۳۱۰ تا ۱۳۹۰ <br/>";
