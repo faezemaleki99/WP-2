@@ -54,7 +54,7 @@ function formvalidation() {
     if(Address!="" && !Address.match(persion))
          errorMessage+= "الفبای ورودی فارسی آدرس <br/>";
 
-    if (nationalcode!="" && nationalcode.length != 12){
+    if (nationalcode!="" && nationalcode.length != 10){
         errorMessage+= " کد ملی ۱۰ رقم و طبق الگو<br/>";
     }
      
