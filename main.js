@@ -1,6 +1,6 @@
 function isNumber(event) {
    // var pattern= /^[-]*/;
-    if (event.keyCode < 48 || event.keyCode > 57 && !event.keyCode.match(pattern)) {
+    if (event.keyCode < 48 || event.keyCode > 57) {
         return false;
     }
     return true;
@@ -9,7 +9,7 @@ function isNumber(event) {
 function formvalidation() {
     var persion= /^[\u0600-\u06FF\s]+$/;
     var email =/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    var pass =/^[a-zA-Z0-9-+!#$*= ]*/;
+    var pass =/^[a-zA-Z0-9-+!#$*= ]/;
     var birth= /['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'][/]/;
     var name = document.getElementsByName("uiname")[0].value;
     var family = document.getElementsByName("uifamily")[0].value;
@@ -58,7 +58,7 @@ function formvalidation() {
         errorMessage+= " کد ملی ۱۰ رقم و طبق الگو<br/>";
     }
      
-    if(password!="" && !password.match(pass) && password.match(persion)){
+    if(password!="" && !password.match(pass)){
         errorMessage+= "رمز عبور نامعتبر <br/>";
     }
     
