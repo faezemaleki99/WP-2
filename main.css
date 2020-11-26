@@ -1,0 +1,50 @@
+
+
+* {box-sizing: border-box}
+
+
+.container {
+    padding: 16px;
+}
+
+input[type=text], input[type=radio], input[type=checkbox] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registerbtn:hover {
+    color: yellow;
+}
+
+/*@font-face {
+    font-family: 'BBadr';
+    src: url('../fonts/BBadr.eot?#') format('eot'),  /* IE6–8 */
+        /* url('../fonts/BBadr.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        /* url('../fonts/BBadr.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+  /*}
