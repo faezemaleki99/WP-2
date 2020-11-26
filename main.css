@@ -36,10 +36,11 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: large;
 }
 
-.registerbtn:hover {
-    color: yellow;
+input[type= submit]:hover {
+    color: black;
 }
 
 /*@font-face {
